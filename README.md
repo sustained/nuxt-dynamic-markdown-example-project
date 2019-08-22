@@ -1,6 +1,8 @@
 # nuxt-dynamic-markdown-example-project
 
-> A very simple demo for my nuxt module - nuxt-dynamic-markdown.
+A very simple demo for my nuxt module - [nuxt-dynamic-markdown](https://github.com/sustained/nuxt-dynamic-markdown).
+
+You should go there instead as the README is far more expansive.
 
 ## Build Setup
 
