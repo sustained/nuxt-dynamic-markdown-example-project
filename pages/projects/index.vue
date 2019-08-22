@@ -11,8 +11,6 @@
           :to="{ name: 'projects-project', params: { project: project.slug } }"
         >
           {{ project.title }}
-
-          {{ project }}
         </nuxt-link>
       </card>
     </div>
