@@ -50,9 +50,9 @@ export default {
           to: { name: 'index' }
         },
         {
-          title: 'Inspire',
+          title: 'Projects',
           icon: 'lightbulb',
-          to: { name: 'inspire' }
+          to: { name: 'projects' }
         }
       ]
     }
