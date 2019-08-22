@@ -1,3 +1,5 @@
+import NuxtDynamicMarkdown from 'nuxt-dynamic-markdown'
+
 export default {
   mode: 'universal',
   /*
@@ -40,7 +42,27 @@ export default {
    */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
+    'nuxt-buefy',
+    [
+      NuxtDynamicMarkdown,
+      {
+        /*
+          Sources are how you tell NDM what to load,
+          where from and how you define your relationships.
+
+          IMPORTANT: This data-source is presumed to be
+          present for the duration of this README.
+        */
+        sources: [
+          {
+            nested: false,
+            name: 'projects',
+            directory: 'projects',
+            relationships: ['keywords']
+          }
+        ]
+      }
+    ]
   ],
   /*
    ** Build configuration
