@@ -9,12 +9,13 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "reinstall-module": "rm -rf ./node_modules/nuxt-dynamic-markdown && npm install"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2",
-    "nuxt-dynamic-markdown": "git+https://github.com/sustained/nuxt-dynamic-markdown.git"
+    "nuxt-dynamic-markdown": "git+https://github.com/sustained/nuxt-dynamic-markdown.git#testing"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
