@@ -88,5 +88,24 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  /**
+   * nuxt-i18n
+   */
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', iso: 'en-GB', file: 'en-GB.js', name: 'English' },
+      { code: 'sv', iso: 'sv-SE', file: 'sv-SE.js', name: 'Svenska' },
+      { code: 'de', iso: 'de-DE', file: 'de-DE.js', name: 'Deutsch' }
+    ],
+    lazy: true,
+    langDir: 'language/',
+    vueI18nLoader: true,
+    strategy: 'prefix_except_default',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
   }
 }
