@@ -77,7 +77,9 @@ export default {
             entities: ['categories', 'articles'],
             relationships: ['tags']
           }
-        ]
+        ],
+
+        languages: ['en', 'sv', 'de']
       }
     ]
   ],
