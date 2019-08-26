@@ -7,6 +7,28 @@
       />
     </card>
 
+    <card title="Also available in:">
+      <ul>
+        <li
+          v-for="(language, index) in project.attributes.translations"
+          :key="index"
+        >
+          <nuxt-link
+            :to="
+              localePath(
+                {
+                  name: 'projects-project',
+                  params: { project: project.attributes.slug }
+                },
+                language
+              )
+            "
+            >{{ language }}</nuxt-link
+          >
+        </li>
+      </ul>
+    </card>
+
     <card title="Raw Project">
       <pre>{{ project }}</pre>
     </card>
