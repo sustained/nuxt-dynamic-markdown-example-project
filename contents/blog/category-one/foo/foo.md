@@ -2,8 +2,7 @@
 slug: foo
 title: Foo Article
 excerpt: Testing Markdown.
-tags:
-  - testing
+tags: [foo, bar, baz]
 meta:
   keywords: foo, bar, baz
   description: An article about foos and foo-ing.

@@ -25,6 +25,6 @@ This is a component:
 
 <Bar />
 
-----
+---
 
 Isn't it great?
