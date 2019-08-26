@@ -52,6 +52,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    'nuxt-i18n',
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
     [
@@ -106,6 +107,10 @@ export default {
     strategy: 'prefix_except_default',
     vueI18n: {
       fallbackLocale: 'en'
+    },
+    vuex: {
+      syncLocale: true,
+      syncRouteParams: true
     }
   }
 }
