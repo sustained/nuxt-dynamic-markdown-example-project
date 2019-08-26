@@ -2,6 +2,17 @@ import NuxtDynamicMarkdown from 'nuxt-dynamic-markdown'
 
 export default {
   mode: 'universal',
+
+  /**
+   * Enable devtools.
+   */
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  },
+
   /*
    ** Headers of the page
    */
@@ -55,10 +66,15 @@ export default {
         */
         sources: [
           {
-            nested: false,
             name: 'projects',
-            directory: 'projects',
-            relationships: ['keywords']
+            relationships: ['keywords'],
+            entities: ['projects']
+          },
+          {
+            name: 'blog',
+            directory: 'blog',
+            entities: ['categories', 'articles'],
+            relationships: ['tags']
           }
         ]
       }
