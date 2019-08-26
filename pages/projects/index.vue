@@ -8,10 +8,14 @@
         icon="alert-decagram"
       >
         <nuxt-link
-          :to="{ name: 'projects-project', params: { project: project.slug } }"
+          :to="
+            localePath({
+              name: 'projects-project',
+              params: { project: project.slug }
+            })
+          "
+          >{{ project.title }}</nuxt-link
         >
-          {{ project.title }}
-        </nuxt-link>
       </card>
     </div>
   </section>
