@@ -13,7 +13,7 @@
     "reinstall-module": "rm -rf ./node_modules/nuxt-dynamic-markdown && npm install"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "nuxt-buefy": "^0.3.2",
     "nuxt-dynamic-markdown": "git+https://github.com/sustained/nuxt-dynamic-markdown.git#testing",
     "nuxt-i18n": "^6.0.2"
